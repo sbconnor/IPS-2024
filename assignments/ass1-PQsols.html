@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,7 +46,7 @@ ul.task-list li input[type="checkbox"] {
   };
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -91,7 +91,7 @@ window.Quarto = {
   <li><a href="#assignment-questions-answers-to-be-uploaded" id="toc-assignment-questions-answers-to-be-uploaded" class="nav-link" data-scroll-target="#assignment-questions-answers-to-be-uploaded">Assignment Questions – <i class="fa-solid fa-cloud-upload-alt" aria-label="cloud-upload-alt"></i> answers to be uploaded</a></li>
   <li><a href="#other-questions-for-seminars-extra-practice" id="toc-other-questions-for-seminars-extra-practice" class="nav-link" data-scroll-target="#other-questions-for-seminars-extra-practice">Other Questions (for seminars / extra practice)</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="ass1-pqsols.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="ass1-PQsols.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -115,10 +115,27 @@ window.Quarto = {
 </header>
 
 
+<div class="rubric">
+<div class="callout callout-style-default callout-note callout-titled" title="Instructions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Instructions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Submit your answers to all of the <strong>Assignment Questions (AQ)</strong>. You should upload your solutions to the VLE as a <em>pdf file</em>.<br>
+Marks will be awarded for clear, logical explanations, as well as for correctness of solutions.</p>
+<p>You should also look at the other questions in preparation for your Week 3 seminar.</p>
+</div>
+</div>
+</div>
 <section id="section" class="level22">
 <p class="heading"></p>
 </section>
-<section id="practice-questions" class="level1">
+<section id="practice-questions" class="level1 PQs">
 <h1>Practice Questions</h1>
 <section id="section-1" class="level7">
 <p class="heading"></p>
@@ -130,7 +147,7 @@ Now suppose that four of the numbered balls are white, and the other two are bla
 <li>at least one of the balls is white?</li>
 </ol>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -139,7 +156,7 @@ Answer
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Since we are sampling without replacement there are <span class="math inline">\(6\times 5 = 30\)</span> different possible outcomes.</p>
 <ol type="a">
@@ -156,27 +173,6 @@ Answer
 <p><strong>PQ2.</strong> Two football teams, each with 11 players, shake hands at the end of a match: every player on Team A shakes hands with every player on Team B. How many handshakes will there be?<br>
 How many will there be if every player shakes hands with every other player (including those on their own team)?</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Each player from Team A has to shake hands with 11 players from Team B. So there are <span class="math inline">\(11^2 = 121\)</span> handshakes in total.<br>
-If everyone shakes hands with everyone else, then we need to count the number of ways of choosing two players out of 22: <span class="math inline">\(C^{22}_2 = 231\)</span>. (Alternatively, we could count how many handshakes take place between two members of the same team, and add this to the 121 that we obtained above. With 11 people in Team A, there are <span class="math inline">\(C^{11}_2 = 55\)</span> pairs of players to shake hands, and then there’s the same number of handshakes between members of Team B. This gives 110 extra handshakes.)</p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-3" class="level7">
-<p class="heading"></p>
-<p><strong>PQ3.</strong> 30 sweets are to be divided amongst 5 children. In how many ways can this be done? What if every child must be given at least two sweets each?</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -188,14 +184,15 @@ Answer
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>There are <span class="math inline">\(C^{30+5-1}_{5-1} = 46,376\)</span> ways of dividing the sweets (allowing for the possibility of some children receiving none). If every child must be given two sweets, then if we do this first of all there are 20 sweets left to be divided: there are <span class="math inline">\(C^{20+5-1}_{5-1} = 10,626\)</span> ways of doing this.</p>
+<p>Each player from Team A has to shake hands with 11 players from Team B. So there are <span class="math inline">\(11^2 = 121\)</span> handshakes in total.<br>
+If everyone shakes hands with everyone else, then we need to count the number of ways of choosing two players out of 22: <span class="math inline">\(C^{22}_2 = 231\)</span>. (Alternatively, we could count how many handshakes take place between two members of the same team, and add this to the 121 that we obtained above. With 11 people in Team A, there are <span class="math inline">\(C^{11}_2 = 55\)</span> pairs of players to shake hands, and then there’s the same number of handshakes between members of Team B. This gives 110 extra handshakes.)</p>
 </div>
 </div>
 </div>
 </section>
-<section id="section-4" class="level7">
+<section id="section-3" class="level7">
 <p class="heading"></p>
-<p><strong>PQ4.</strong> Consider two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. Let <span class="math inline">\(C\)</span> be the event that “<span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> occurs, but not both”. Express <span class="math inline">\(C\)</span> in terms of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, using only the basic operations “union”, “intersection”, and “complement”.</p>
+<p><strong>PQ3.</strong> 30 sweets are to be divided amongst 5 children. In how many ways can this be done? What if every child must be given at least two sweets each?</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -207,6 +204,26 @@ Answer
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There are <span class="math inline">\(C^{30+5-1}_{5-1} = 46,376\)</span> ways of dividing the sweets (allowing for the possibility of some children receiving none). If every child must be given two sweets, then if we do this first of all there are 20 sweets left to be divided: there are <span class="math inline">\(C^{20+5-1}_{5-1} = 10,626\)</span> ways of doing this.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="section-4" class="level7">
+<p class="heading"></p>
+<p><strong>PQ4.</strong> Consider two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. Let <span class="math inline">\(C\)</span> be the event that “<span class="math inline">\(A\)</span> or <span class="math inline">\(B\)</span> occurs, but not both”. Express <span class="math inline">\(C\)</span> in terms of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, using only the basic operations “union”, “intersection”, and “complement”.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>There are many possible answers. Here are three: <span class="math display">\[
 \begin{split}
@@ -224,7 +241,7 @@ Answer
 <p><strong>PQ5.</strong> Prove, by expanding in terms of factorials, that</p>
 <p><span class="math display">\[ {n\choose r} = {{n-1}\choose{r-1}} + {{n-1}\choose r}, \qquad 1\leq r\leq n \,. \]</span></p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -233,7 +250,7 @@ Answer
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math display">\[
 \begin{split}
@@ -250,26 +267,6 @@ Answer
 <p class="heading"></p>
 <p><strong>PQ6.</strong> Consider a group of <span class="math inline">\(n\)</span> objects, labelled <span class="math inline">\(1,\dots,n\)</span>. How many (unordered) sets of size <span class="math inline">\(r\)</span> are there that contain object 1? How many are there that <em>don’t</em> contain object 1? Use these observations to re-prove the identity in question <strong>PQ5</strong>.</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>There are <span class="math inline">\({{n-1}\choose{r-1}}\)</span> sets of size <span class="math inline">\(r\)</span> that contain object 1. (First put object 1 in the set, and then choose another <span class="math inline">\(r-1\)</span> objects from the remaining <span class="math inline">\(n-1\)</span> objects available.) There are <span class="math inline">\({{n-1}\choose r}\)</span> sets that don’t contain object 1. There are a total of <span class="math inline">\({n\choose r}\)</span> unordered sets of size <span class="math inline">\(r\)</span> possible with <span class="math inline">\(n\)</span> objects, and since all of these must either contain object 1 or not contain it, we see that <span class="math display">\[ {n\choose r} = {{n-1}\choose{r-1}} + {{n-1}\choose r}, \qquad 1\leq r\leq n \,.\]</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-7" class="level7">
-<p class="heading"></p>
-<p><strong>PQ7.</strong> Two dice are thrown. Let <span class="math inline">\(A\)</span> be the event that the sum of the dice is even; let <span class="math inline">\(B\)</span> be the event that the first die shows a higher number than the second; and let <span class="math inline">\(C\)</span> be the event that the sum of the two dice is 6. List all the outcomes belonging to the events <span class="math inline">\(A\cap B\)</span>, <span class="math inline">\(A\cup C\)</span>, <span class="math inline">\(A\cap C^c\)</span>, <span class="math inline">\(A^c\cap C\)</span>, <span class="math inline">\(A\cap B\cap C\)</span>.</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
@@ -280,6 +277,26 @@ Answer
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There are <span class="math inline">\({{n-1}\choose{r-1}}\)</span> sets of size <span class="math inline">\(r\)</span> that contain object 1. (First put object 1 in the set, and then choose another <span class="math inline">\(r-1\)</span> objects from the remaining <span class="math inline">\(n-1\)</span> objects available.) There are <span class="math inline">\({{n-1}\choose r}\)</span> sets that don’t contain object 1. There are a total of <span class="math inline">\({n\choose r}\)</span> unordered sets of size <span class="math inline">\(r\)</span> possible with <span class="math inline">\(n\)</span> objects, and since all of these must either contain object 1 or not contain it, we see that <span class="math display">\[ {n\choose r} = {{n-1}\choose{r-1}} + {{n-1}\choose r}, \qquad 1\leq r\leq n \,.\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="section-7" class="level7">
+<p class="heading"></p>
+<p><strong>PQ7.</strong> Two dice are thrown. Let <span class="math inline">\(A\)</span> be the event that the sum of the dice is even; let <span class="math inline">\(B\)</span> be the event that the first die shows a higher number than the second; and let <span class="math inline">\(C\)</span> be the event that the sum of the two dice is 6. List all the outcomes belonging to the events <span class="math inline">\(A\cap B\)</span>, <span class="math inline">\(A\cup C\)</span>, <span class="math inline">\(A\cap C^c\)</span>, <span class="math inline">\(A^c\cap C\)</span>, <span class="math inline">\(A\cap B\cap C\)</span>.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Writing <span class="math inline">\((i,j)\)</span> for the outcome of the two dice, where <span class="math inline">\(i\)</span> is the score on the first die and <span class="math inline">\(j\)</span> the score on the second, we have: <span class="math display">\[
 \begin{split}
@@ -295,12 +312,12 @@ A\cap B \cap C &amp;= \{(4,2),(5,1)\} \,.
 </div>
 </div>
 </div>
+</section>
+</section>
 <section id="section-8" class="level22">
 <p class="heading"></p>
 </section>
-</section>
-</section>
-<section id="assignment-questions-answers-to-be-uploaded" class="level1">
+<section id="assignment-questions-answers-to-be-uploaded" class="level1 AQs">
 <h1>Assignment Questions – <i class="fa-solid fa-cloud-upload-alt" aria-label="cloud-upload-alt"></i> answers to be uploaded</h1>
 <section id="section-9" class="level7">
 <p class="heading"></p>
@@ -327,12 +344,12 @@ A\cap B \cap C &amp;= \{(4,2),(5,1)\} \,.
 <section id="section-12" class="level7">
 <p class="heading"></p>
 <p><strong>AQ4.</strong> Three friends want to place a pizza order (one pizza each), from a restaurant which offers three types of pizza (<span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>). How many different possible pizza orders are there? (E.g. one possible order is that two people choose <span class="math inline">\(A\)</span>, and one person <span class="math inline">\(B\)</span>.)</p>
+</section>
+</section>
 <section id="section-13" class="level22">
 <p class="heading"></p>
 </section>
-</section>
-</section>
-<section id="other-questions-for-seminars-extra-practice" class="level1">
+<section id="other-questions-for-seminars-extra-practice" class="level1 OQs">
 <h1>Other Questions (for seminars / extra practice)</h1>
 <section id="section-14" class="level7">
 <p class="heading"></p>
@@ -377,8 +394,10 @@ A\cap B \cap C &amp;= \{(4,2),(5,1)\} \,.
 <li><span class="math inline">\(n_1+n_2+\dots+ n_r = n\)</span>.</li>
 </ol>
 </section>
+</section>
 <section id="section-22" class="level7">
 <p class="heading"></p>
+<div class="challenge">
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -394,7 +413,7 @@ Can you find a closed form expression for this number (one not involving any sum
 Does the number of such vectors increase faster as we change <span class="math inline">\(n\to n+1\)</span> or <span class="math inline">\(k\to k+1\)</span>?</p>
 </div>
 </div>
-</section>
+</div>
 </section>
 
 </main>
@@ -578,18 +597,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -621,7 +629,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -629,7 +659,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

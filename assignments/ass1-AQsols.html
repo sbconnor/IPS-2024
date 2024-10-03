@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Stephen Connor">
 
-<title>Computer labs – Introduction to Probability and Statistics</title>
+<title>Introduction to Probability &amp; Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,54 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../labs/intro-lab.html" rel="next">
-<link href="../index.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/quarto-contrib/bookup_fonts_embed-0.0/fonts-download.css" rel="stylesheet">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<script src="ass1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="ass1_files/libs/quarto-html/quarto.js"></script>
+<script src="ass1_files/libs/quarto-html/popper.min.js"></script>
+<script src="ass1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="ass1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="ass1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="ass1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="ass1_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="ass1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="ass1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="ass1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="ass1_files/libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="ass1_files/libs/quarto-contrib/bookup_fonts_embed-0.0/fonts-download.css" rel="stylesheet">
+<link href="ass1_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="ass1_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script>
   window.MathJax = {
     tex: {
@@ -80,108 +46,62 @@ ul.task-list li input[type="checkbox"] {
   };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../css/ips.scss">
 </head>
 
-<body class="nav-sidebar docked">
+<body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/labs.html">Computer labs</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../">Introduction to Probability and Statistics</a> 
-        <div class="sidebar-tools-main">
-    <a href="../Introduction-to-Probability-and-Statistics.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Overview</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../labs/labs.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Computer labs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../labs/intro-lab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Intro Lab: Meeting R and RStudio</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../labs/lab1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 1: Script files and simulation</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../assignments/assignments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Written assignments</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Menu</h2>
    
   <ul>
-  <li><a href="#assessment" id="toc-assessment" class="nav-link active" data-scroll-target="#assessment">Assessment</a></li>
+  <li><a href="#assignment-questions-answers-to-be-uploaded" id="toc-assignment-questions-answers-to-be-uploaded" class="nav-link active" data-scroll-target="#assignment-questions-answers-to-be-uploaded">Assignment Questions – <i class="fa-solid fa-cloud-upload-alt" aria-label="cloud-upload-alt"></i> answers to be uploaded</a></li>
   </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="ass1-AQsols.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-labs" class="quarto-section-identifier">Computer labs</span></h1>
+<h1 class="title">Introduction to Probability &amp; Statistics</h1>
+<p class="subtitle lead">Assignment 1, 2024/25</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -193,55 +113,132 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The goal of these labs is to introduce you to, and build up your proficiency with, R and RStudio. You’ll be using these throughout the course, both to learn the statistical concepts discussed in the lectures and also to analyze real data and come to informed conclusions. To straighten out which is which:</p>
-<ul>
-<li>R is the name of the programming language itself;</li>
-<li>RStudio is a convenient interface.</li>
-</ul>
-<p>The R language is the standard statistical tool used by most statisticians at universities. One reason data scientists and statisticians like to use R is that all known statistical techniques are available in R. Whenever someone develops a new statistical technique, one of the first things they do is produce an R package so that the technique becomes available in R. The reason they do this for R rather than for one of the commercial alternatives is that R is open source and freely available to all, and of course that the previous methods on which the new method builds are already available in R.</p>
-<p>Feeling comfortable using R is not only important for this module and any further statistics modules you may take at the Department of Mathematics of the University of York, it can also be an important factor for your future career (see the article <a href="http://blog.revolutionanalytics.com/2014/02/r-salary-surveys.html">“R skills attract the highest salaries”</a>. Even though R is specially designed for statistics, it is consistently in the <a href="https://spectrum.ieee.org/top-programming-languages-2022">list of the top ten most important programming languages</a> compiled by the IEEE spectrum magazine.</p>
-<p>As the labs progress, you are encouraged to explore beyond what the labs dictate; a willingness to experiment will make you a much better programmer.</p>
-<section id="assessment" class="level2">
-<h2 class="anchored" data-anchor-id="assessment">Assessment</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
+<section id="section" class="level22">
+<p class="heading"></p>
+</section>
+<section id="section-8" class="level22">
+<p class="heading"></p>
+</section>
+<section id="assignment-questions-answers-to-be-uploaded" class="level1 AQs">
+<h1>Assignment Questions – <i class="fa-solid fa-cloud-upload-alt" aria-label="cloud-upload-alt"></i> answers to be uploaded</h1>
+<section id="section-9" class="level7">
+<p class="heading"></p>
+<p><strong>AQ1.</strong> Let <span class="math inline">\(E\)</span>, <span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> be three events. Find expressions for these events:</p>
+<ol type="a">
+<li>Only <span class="math inline">\(F\)</span> occurs;</li>
+<li><span class="math inline">\(F\)</span> and <span class="math inline">\(G\)</span> occur;</li>
+<li><span class="math inline">\(E\)</span> or <span class="math inline">\(F\)</span> occurs, but not <span class="math inline">\(G\)</span>;</li>
+<li>At least two of the events occur.</li>
+</ol>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Answer
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>The five main labs (imaginatively named “Lab 1” to “Lab 5”) <strong>count for credit</strong>: your best 4 out of 5 will marks will count for 20% of the module mark.</p>
-<p>Each lab will have an accompanying <strong>quiz</strong>. As you work through each lab you will find places where you are asked to perform a calculation and then enter your mark in the appropriate quiz.</p>
-<p>You can have <strong>two attempts</strong> at each quiz; the mark from your <strong>best attempt</strong> will become your final grade for that lab.</p>
+<ol type="a">
+<li><span class="math inline">\(F\cap E^c\cap G^c\)</span>; <strong>[1]</strong></li>
+<li><span class="math inline">\(F\cap G\)</span>; <strong>[1]</strong><br>
+</li>
+<li><span class="math inline">\((E\cup F) \cap G^c\)</span>; <strong>[1]</strong></li>
+<li><span class="math inline">\((E\cap F) \cup (E \cap G) \cup (F\cap G)\)</span>. <strong>[2]</strong></li>
+</ol>
+<p>(You may have slightly different answers to the above, but if so then you should be able to prove that your versions are equivalent to mine!)</p>
 </div>
 </div>
-<p>The <strong>Intro lab</strong> does <em>not</em> count for credit, but you should attempt this in the first week of the semester to make sure that:</p>
+</div>
+</section>
+<section id="section-10" class="level7">
+<p class="heading"></p>
+<p><strong>AQ2.</strong> In how many ways can three men and four women be seated in a row if</p>
+<ol type="a">
+<li>there are no restrictions on the order;</li>
+<li>no two members of the same sex can sit next to one another?</li>
+</ol>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>With no restrictions there are <span class="math inline">\(7! = 5040\)</span> ways. <strong>[2]</strong></li>
+<li>Any arrangement satisfying this constraint must take the form <span class="math inline">\(WMWMWMW\)</span> (where <span class="math inline">\(W\)</span> is a woman, and <span class="math inline">\(M\)</span> a man). There are <span class="math inline">\(3!=6\)</span> ways of arranging the men, and <span class="math inline">\(4!=24\)</span> ways of arranging the women: this gives 144 arrangements. <strong>[3]</strong></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="section-11" class="level7">
+<p class="heading"></p>
+<p><strong>AQ3.</strong> A student has 1 bookshelf, 9 novels (among which 2 titles appear twice each), 4 textbooks on probability theory and 6 knitting books. In how many ways can he put the books on the shelf such that books in the same category (novels, textbooks, knitting books) are next to each other? Possibilities where the doubles are switched are considered to be the same and are not counted separately. (Hint: approx. <span class="math inline">\(9.4\times10^{9}\)</span>.)</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>The 3 categories can be placed in <span class="math inline">\(3!=6\)</span> ways. The 4 textbooks can be placed in <span class="math inline">\(4!=24\)</span> ways, and the 6 knitting books in <span class="math inline">\(6!=720\)</span>. <strong>[2]</strong> For the novels, by Proposition 1.4 there are <span class="math inline">\(9!/(2!2!)\)</span> ways of arranging them. <strong>[2]</strong> This gives a total of <span class="math inline">\(3!4!6!\frac{9!}{2!2!} = 9,405,849,600\)</span> ways to order all books. <strong>[1]</strong></p>
+</div>
+</div>
+</div>
+</section>
+<section id="section-12" class="level7">
+<p class="heading"></p>
+<p><strong>AQ4.</strong> Three friends want to place a pizza order (one pizza each), from a restaurant which offers three types of pizza (<span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>). How many different possible pizza orders are there? (E.g. one possible order is that two people choose <span class="math inline">\(A\)</span>, and one person <span class="math inline">\(B\)</span>.)</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><em>(I realised after setting this question that there was the possibility of confusion here, caused by my use of the word “order”. When referring to a “pizza order” I was meaning the “request” that was sent to the restaurant, as indicated in the final line of the question. So an order was meant to be of the sort “We’d like two of pizza A and one of pizza B”, and the restaurant wouldn’t care which person wanted which pizza. The solution below uses that assumption. <strong>However</strong>, if you thought that the exact permutation of pizzas (corresponding to which person wanted which pizza) had to be taken into account, then you will still have received marks for this provided that (as always) you clearly explained what you were doing.)</em></p>
+<p>A general pizza order can be written as a vector <span class="math inline">\((n_A,n_B,n_C)\)</span>, where <span class="math inline">\(n_A\)</span> is the number of people ordering pizza <span class="math inline">\(A\)</span>, etc. We require the number of such vectors for which</p>
 <ul>
-<li>you can successfully access R</li>
-<li>you know how to enter answers in the accompanying quiz.</li>
+<li>each entry is a non-negative integer</li>
+<li>the entries sum to three. <strong>[3]</strong></li>
 </ul>
-<!--
-#### Schedule
-
-(Each link will only work once the relevant lab has been released.)
-
-| Lab                                              | Hand-out date            | Quiz due date (10am)    |
-|--------------------------------------------------|--------------------------|-------------------------|
-| [Intro Lab (not for assessment)](#sec-intro-lab) | Tuesday 26 Sep (Week 1)  | ---                     |
-| [Lab 1](#sec-lab1)                               | Thursday 5 Oct (Week 2)  | Monday 9 Oct (Week 3)   |
-| [Lab 2](#sec-lab2)                               | Thursday 19 Oct (Week 4) | Monday 23 Nov (Week 5)  |
-| [Lab 3](#sec-lab3)                               | Thursday 9 Nov (Week 6)  | Monday 13 Nov (Week 7)  |
-| [Lab 4](#sec-lab4)                               | Thursday 23 Nov (Week 8) | Monday 27 Nov (Week 9)  |
-| [Lab 5](#sec-lab5)                               | Thursday 7 Dec (Week 10) | Monday 11 Dec (Week 11) |
--->
-
-
+<p>From Proposition 1.10 we know that this number is given by <span class="math inline">\(C^{3+3-1}_{3-1} = C^5_2 = 10\)</span>. <strong>[2]</strong></p>
+<p>Another possible answer: <span class="math inline">\(n_A\)</span> people choose pizza <span class="math inline">\(A\)</span>, for some <span class="math inline">\(0\le n_A\le 3\)</span>. Once these <span class="math inline">\(n_A\)</span> people are sorted out, we have <span class="math inline">\(3-n_A\)</span> people left, so <span class="math inline">\(n_B\)</span> can take the values <span class="math inline">\(0,\dots,3-n_A\)</span> (i.e.&nbsp;there are <span class="math inline">\(4-n_A\)</span> possible values for <span class="math inline">\(n_B\)</span>). So we have to sum <span class="math display">\[ \sum_{n_A=0}^3 (4-n_A) = 4+3+2+1=10\,.\]</span></p>
+<p>Another method (though less elegant) is to simply list all of the possibilities: <span class="math display">\[(3,0,0),\,(2,1,0),\,(2,0,1),\,(1,2,0),\,(1,0,2),\,(1,1,1),\,(0,3,0),\,(0,0,3),\,(0,1,2),\,(0,2,1)\,.\]</span> (This would not be a good idea if the numbers were much bigger, of course!)</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="section-13" class="level22">
+<p class="heading"></p>
+</section>
+<section id="section-22" class="level7">
+<p class="heading"></p>
 </section>
 
-</main> <!-- /main -->
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -478,7 +475,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/sbconnor\.github\.io\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -806,32 +803,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../labs/intro-lab.html" class="pagination-link" aria-label="Intro Lab: Meeting R and RStudio">
-        <span class="nav-page-text">Intro Lab: Meeting R and RStudio</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Created by <a href="http://www-users.york.ac.uk/~sbc502/">Stephen Connor</a>.</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
-  </div>
-</footer>
 
 
 
