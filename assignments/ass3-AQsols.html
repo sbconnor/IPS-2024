@@ -87,11 +87,9 @@ window.Quarto = {
     <h2 id="toc-title">Menu</h2>
    
   <ul>
-  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link active" data-scroll-target="#practice-questions">Practice Questions</a></li>
-  <li><a href="#assignment-questions-answers-to-be-uploaded" id="toc-assignment-questions-answers-to-be-uploaded" class="nav-link" data-scroll-target="#assignment-questions-answers-to-be-uploaded">Assignment Questions – <i class="fa-solid fa-cloud-upload-alt" aria-label="cloud-upload-alt"></i> answers to be uploaded</a></li>
-  <li><a href="#other-questions-for-seminars-extra-practice" id="toc-other-questions-for-seminars-extra-practice" class="nav-link" data-scroll-target="#other-questions-for-seminars-extra-practice">Other Questions (for seminars / extra practice)</a></li>
+  <li><a href="#assignment-questions-answers-to-be-uploaded" id="toc-assignment-questions-answers-to-be-uploaded" class="nav-link active" data-scroll-target="#assignment-questions-answers-to-be-uploaded">Assignment Questions – <i class="fa-solid fa-cloud-upload-alt" aria-label="cloud-upload-alt"></i> answers to be uploaded</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="ass3-PQsols.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="ass3-AQsols.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -115,210 +113,8 @@ window.Quarto = {
 </header>
 
 
-<div class="rubric">
-<div class="callout callout-style-default callout-note callout-titled" title="Instructions">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Instructions
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Submit your answers to all of the <strong>Assignment Questions (AQ)</strong>. You should upload your solutions to the VLE as a <em>pdf file</em>.<br>
-Marks will be awarded for clear, logical explanations, as well as for correctness of solutions.</p>
-<p>You should also look at the other questions in preparation for your Week 7 seminar.</p>
-</div>
-</div>
-</div>
 <section id="section" class="level22">
 <p class="heading"></p>
-</section>
-<section id="practice-questions" class="level1 PQs">
-<h1>Practice Questions</h1>
-<section id="section-1" class="level7">
-<p class="heading"></p>
-<p><strong>PQ1.</strong> Each morning a (fictional) student rolls a die and starts studying if she throws 6. Otherwise, she stays in bed. However, during the four months of exams, she tosses a coin instead of rolling a die and studies if she tosses Heads. On a (randomly chosen) morning, the student is studying. What is the probability that it is exam period? (Assume for simplicity that each month has the same number of days!)</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Let <span class="math inline">\(W=\{\text{student is working}\}\)</span> and} <span class="math inline">\(E=\{\text{exam period}\}\)</span>. Then Bayes’ theorem tells us that<br>
-<span class="math display">\[
-\begin{split}
-\mathbb{P}\left(E\,|\,W\right)&amp;=\frac{\mathbb{P}\left(W\,|\,E\right)\mathbb{P}\left(E\right)}{\mathbb{P}\left(W\,|\,E\right)\mathbb{P}\left(E\right)+\mathbb{P}\left(W\,|\,E^c\right)\mathbb{P}\left(E^c\right)}\\
-&amp;=\frac{\dfrac{1}{2}\cdot\dfrac{1}{3}}{\dfrac{1}{2}\cdot\dfrac{1}{3}+\dfrac{1}{6}\cdot\dfrac{2}{3}}
-=\frac{3}{5}.
-\end{split}
-\]</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-2" class="level7">
-<p class="heading"></p>
-<p><strong>PQ2.</strong> Consider a discrete random variable <span class="math inline">\(V\)</span> taking values in <span class="math inline">\(\{1,2,3,4\}\)</span> with mass function <span class="math inline">\(p_V\)</span> given by <span class="math display">\[
-p_V(x) = \begin{cases}
-            xc^x &amp; \quad\text{if $x=1,2$} \\
-            c(5-x) &amp; \quad\text{if $x=3,4$}.
-          \end{cases}
-\]</span> What value of <span class="math inline">\(c\)</span> makes <span class="math inline">\(p_V\)</span> a mass function?</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>To be a mass function, we need <span class="math inline">\(p_V(x)\geq 0\)</span> for all <span class="math inline">\(x\)</span> and <span class="math inline">\(\sum_x p_V(x) = 1\)</span>. For the second of these constraints we need <span class="math inline">\(c + 2c^2 + 2c + c = 1\)</span>, and so <span class="math inline">\(c = -1 \pm \sqrt{6}/2\)</span>. But if we take <span class="math inline">\(c=-1-\sqrt{6}/2\)</span> then we get (for example) <span class="math inline">\(p_V(3)&lt;0\)</span>, which isn’t allowed. Therefore, we have to take <span class="math inline">\(c=-1+\sqrt{6}/2&gt;0\)</span>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-3" class="level7">
-<p class="heading"></p>
-<p><strong>PQ3.</strong> What is the probability that exactly 3 heads are obtained in 5 tosses of a fair coin?</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Let <span class="math inline">\(X\)</span> denote the number of heads obtained. Then <span class="math inline">\(X\sim\mbox{\textup{Bin}}(5,1/2)\)</span>, and <span class="math display">\[
-\mathbb{P}\left(X=3\right) = {5\choose 3}\left(\frac{1}{2}\right)^5 = 0.3125 \,.
-\]</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-4" class="level7">
-<p class="heading"></p>
-<p><strong>PQ4.</strong> Let <span class="math inline">\(Y\sim\mbox{\textup{Poisson}}(2)\)</span>. Write down the mass function for <span class="math inline">\(Y\)</span>. What is <span class="math inline">\(\mathbb{P}\left(Y\geq 2\right)\)</span>?</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The probability mass function is given by <span class="math display">\[
-p_Y(k)=\frac{2^k}{k!}e^{-2}\,.
-\]</span> We can then calculate <span class="math display">\[
-\mathbb{P}\left(Y\geq 2\right)=1-\mathbb{P}\left(Y&lt;2\right)=1-(\mathbb{P}\left(Y=0\right)+\mathbb{P}\left(Y=1\right))=1-\left(1+2\right)e^{-2}.
-\]</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-5" class="level7">
-<p class="heading"></p>
-<p><strong>PQ5.</strong> Recall the Chevalier de Méré’s problem: two dice are thrown 24 times – you win £1 if at least one double 6 is thrown, otherwise you lose £1. How much do you expect to win on average? Is this a good bet?</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The probability of throwing a double 6 with one throw of two dice is <span class="math inline">\(1/36\)</span>. The probability of there being <em>no</em> occurrences of a double 6 in 24 throws of two dice is therefore <span class="math inline">\((35/36)^{24} \approx 0.509\)</span>. Letting <span class="math inline">\(X\)</span> denote your winnings from the game, this is a random variable satisfying <span class="math display">\[
-\mathbb{P}\left(X=1\right) \approx 0.491\,, \quad \text{and} \quad \mathbb{P}\left(X=-1\right) \approx 0.509 \,.
-\]</span></p>
-<p>Your expected winnings are hence given by <span class="math display">\[
-\mathbb{E}\left[X\right] \approx 0.491  - 0.509\approx -0.018 \ &lt;0 \,.
-\]</span> Since you expect to lose on average, this isn’t a good bet to make!</p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-6" class="level7">
-<p class="heading"></p>
-<p><strong>PQ6.</strong> The probability density function <span class="math inline">\(f_X\)</span> of a continuous random variable <span class="math inline">\(X\)</span> is given by <span class="math display">\[
-f_X(x)=\begin{cases}
-x(3-x)+c &amp;\text{ if $1\leq x\leq2$}\\
-0&amp;\text{ otherwise\,. }\end{cases}
-\]</span> Compute <span class="math inline">\(c\)</span>. Give the distribution function of <span class="math inline">\(X\)</span>.</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The constant <span class="math inline">\(c\)</span> is determined by the requirement that the integral of the density function over the entire real line is equal to one: <span class="math display">\[
-1=\int_{-\infty}^\infty f_X(x)dx=\int_1^2 (x(3-x)+c) dx = 13/6+c\,.
-\]</span> This implies that <span class="math inline">\(c=-7/6\)</span>. Note that for this value of <span class="math inline">\(c\)</span> the function <span class="math inline">\(f_X\)</span> is non-negative everywhere, which is also required in order for it to be a density.</p>
-<p>The distribution function is obtained as an integral over the density function, but not over the whole real line but only from <span class="math inline">\(-\infty\)</span> up to <span class="math inline">\(x\)</span>: <span class="math display">\[
-F_X(x)=\begin{cases}
-  0 &amp; \text{ if $x&lt;1$}\\
-  \int_1^x f_X(s)ds=\int_1^x (s(3-s)-7/6)ds= \frac{9x^2-2x^3-7x}{6} &amp;\text{ if $1\leq x\leq2$}\\
-  1 &amp; \text{if $2&lt; x$.}
-\end{cases}
-\]</span></p>
-</div>
-</div>
-</div>
-</section>
-<section id="section-7" class="level7">
-<p class="heading"></p>
-<p><strong>PQ7.</strong> A continuous random variable <span class="math inline">\(X\)</span> has a distribution function <span class="math inline">\(F\)</span> which satisfies <span class="math display">\[
-F(x) = \begin{cases}0 &amp;\text{ for } x &lt; 0\\\frac{4x^2+3x}{7}  &amp;\text{ for } 0 \leq x \leq 1\\ 1 &amp;\text{ for } x &gt; 1\,. \end{cases}
-\]</span> Determine <span class="math inline">\(\mathbb{E}\left[X\right]\)</span>.</p>
-<div class="callout callout-style-default callout-caution no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Answer
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>The probability density function of <span class="math inline">\(X\)</span> is given by <span class="math display">\[
-f(x)=\frac{d}{dx}F(x)=\frac{8x+3}{7}
-\]</span> for <span class="math inline">\(0\leq x \leq 1\)</span>, and <span class="math inline">\(f(x)=0\)</span> elsewhere. So <span class="math display">\[
-\mathbb{E}\left[X\right]=\int_{-\infty}^\infty xf(x)dx=\int_0^1\left(\frac{8x^2+3x}{7}\right)dx=\frac{25}{42}.
-\]</span></p>
-</div>
-</div>
-</div>
-</section>
 </section>
 <section id="section-8" class="level22">
 <p class="heading"></p>
@@ -328,20 +124,111 @@ f(x)=\frac{d}{dx}F(x)=\frac{8x+3}{7}
 <section id="section-9" class="level7">
 <p class="heading"></p>
 <p><strong>AQ1.</strong> Consider the probability space corresponding to throwing a fair die. Give an example of a random variable <span class="math inline">\(X\)</span> whose image is <span class="math inline">\(\{1, 2, 3, 4\}\)</span> and for which <span class="math inline">\(F_X(\pi)=2/3\)</span>.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>There are lots of possibilities. The only important thing is that exactly two of the outcomes (<span class="math inline">\(\Omega=\{1,2,3,4,5,6\}\)</span>) are mapped to <span class="math inline">\(4\)</span> so that <span class="math inline">\(F_X(\pi)=\mathbb{P}\left(X\le \pi\right)=1-\mathbb{P}\left(X=4\right)=1 - 2/6=2/3\)</span>. One possibility is <span class="math inline">\(X(1)=1, X(2)=2, X(3)=3, X(4)=3, X(5)=4,X(6)=4\)</span>. <strong>[3 for a correct example; 2 for some sort of reasoning]</strong></p>
+</div>
+</div>
+</div>
 </section>
 <section id="section-10" class="level7">
 <p class="heading"></p>
 <p><strong>AQ2.</strong> Let <span class="math inline">\(\lambda&gt;0\)</span> be some positive number. Find <span class="math inline">\(c\)</span> such that the following function is a density function: <span class="math display">\[
 f(x) =ce^{-\lambda \left\vert x-1\right\vert }\,, \quad x\in \mathbb{R}.
 \]</span></p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>For <span class="math inline">\(f\)</span> to be a density, it must be non-negative on <span class="math inline">\(\mathbb{R}\)</span> and satisfy <span class="math inline">\(\int_{-\infty}^\infty f(x) dx = 1\)</span>. Since the exponential function is non-negative, <span class="math inline">\(f\)</span> is non-negative everywhere as long as <span class="math inline">\(c\geq 0\)</span> <strong>[1]</strong>.</p>
+<p>Note that <span class="math display">\[
+\begin{split}
+\int_{-\infty}^{\infty}e^{-\lambda |x-1|}dx &amp;= \int_{-\infty}^1e^{-\lambda (1-x)}dx+\int_1^{\infty}e^{-\lambda (x-1)}dx\\
+&amp;=\frac{1}{\lambda}\left[e^{-\lambda(1- x)}\right]_{-\infty}^1-\frac{1}{\lambda}\left[e^{-\lambda (x-1)}\right]_1^{\infty}=\frac{2}{\lambda}\,.
+\end{split}
+\]</span> <strong>[3]</strong></p>
+<p>So <span class="math inline">\(f(\cdot)\)</span> is a density if and only if <span class="math inline">\(c=\lambda/2\)</span>. <strong>[1]</strong></p>
+</div>
+</div>
+</div>
 </section>
 <section id="section-11" class="level7">
 <p class="heading"></p>
 <p><strong>AQ3.</strong> Suppose that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent events. Show that <span class="math inline">\(A^c\)</span> and <span class="math inline">\(B^c\)</span> are independent.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>We need to show that <span class="math inline">\(\mathbb{P}\left(A^c\cap B^c\right) = \mathbb{P}\left(A^c\right)\mathbb{P}\left(B^c\right)\)</span> <strong>[1]</strong>. <span class="math display">\[
+\begin{split}
+\mathbb{P}\left(A^c\cap B^c\right)&amp;=\mathbb{P}\left((A\cup B)^c\right) \qquad\text{(De Morgan)}\\
+  &amp;=1-\mathbb{P}\left(A\cup B\right) \qquad\text{(P4)}\\
+  &amp;=1-(\mathbb{P}\left(A\right)+\mathbb{P}\left(B\right)-\mathbb{P}\left(A\cap B\right)) \qquad\text{(P6)}\\
+  &amp;=(1-\mathbb{P}\left(A\right))-\mathbb{P}\left(B\right)+\mathbb{P}\left(A\right)\mathbb{P}\left(B\right)  \qquad\text{(independence of $A$ and $B$)}\\
+  &amp;=\mathbb{P}\left(A^c\right)-\mathbb{P}\left(B\right)[1-\mathbb{P}\left(A\right)]  \qquad\text{(P4)}\\
+  &amp;=\mathbb{P}\left(A^c\right)-\mathbb{P}\left(B\right)\mathbb{P}\left(A^c\right)  \qquad\text{(P4)}\\
+  &amp;=\mathbb{P}\left(A^c\right)[1-\mathbb{P}\left(B\right)]\\
+  &amp;=\mathbb{P}\left(A^c\right)\mathbb{P}\left(B^c\right).  \qquad\text{(P4)}\\
+\end{split}
+\]</span> <strong>[4; clear justification of reasoning needs to be given for high marks]</strong></p>
+</div>
+</div>
+</div>
 </section>
 <section id="section-12" class="level7">
 <p class="heading"></p>
 <p><strong>AQ4.</strong> A box contains three coins: one has a Head on both sides; one has a Tail on both sides; the other coin is normal and fair. A coin is chosen at random from the box and tossed four times. What is the probability that the two-Headed coin was chosen, given that all four tosses are Heads?</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(A_1=\{\text{two-Headed coin chosen}\}\)</span>, <span class="math inline">\(A_2=\{\text{two-Tailed coin chosen}\}\)</span>, <span class="math inline">\(A_3 = \{\text{fair coin chosen}\}\)</span>, and <span class="math inline">\(B=\{\text{obtain four Heads}\}\)</span> <strong>[1 for setting up some notation]</strong>.</p>
+<p>Then <span class="math display">\[
+\begin{split}
+\mathbb{P}\left(B\right)&amp;=\sum_{i=1}^3\mathbb{P}\left(B\,|\,A_i\right)\mathbb{P}\left(A_i\right) = 1 \cdot \frac{1}{3}+ 0 \cdot\frac{1}{3} + \left(\frac{1}{2}\right)^4\cdot \frac{1}{3}=\frac{17}{48}\,.
+\end{split}
+\]</span> <strong>[2]</strong> Finally, we can use Bayes’ theorem: <span class="math display">\[
+\begin{split}
+\mathbb{P}\left(A_1\,|\,B\right)&amp;=\frac{\mathbb{P}\left(B\,|\,A_1\right)\mathbb{P}\left(A_1\right)}{\mathbb{P}\left(B\right)}=\frac{1\cdot 1/3}{17/48}=\frac{16}{17}.
+\end{split}
+\]</span> <strong>[2]</strong></p>
+</div>
+</div>
+</div>
 </section>
 <section id="section-13" class="level7">
 <p class="heading"></p>
@@ -350,78 +237,8 @@ f(x) =ce^{-\lambda \left\vert x-1\right\vert }\,, \quad x\in \mathbb{R}.
 <section id="section-14" class="level22">
 <p class="heading"></p>
 </section>
-<section id="other-questions-for-seminars-extra-practice" class="level1 OQs">
-<h1>Other Questions (for seminars / extra practice)</h1>
-<section id="section-15" class="level7">
-<p class="heading"></p>
-<p><strong>OQ1.</strong> Consider a discrete random variable <span class="math inline">\(Y\)</span> taking values in the set <span class="math inline">\(\{0,1,\dots,8\}\)</span> and with probability mass function <span class="math inline">\(p_Y\)</span> given by <span class="math display">\[
-p_Y(k) = \begin{cases}
-  c\,a &amp; \quad\text{if $k=0,1,2,3,4,5$} \\
-  c\,a^2 &amp; \quad\text{if $k=6,7$} \\
-  c(1-a)^2 &amp; \quad\text{if $k=8$,}
-\end{cases}
-\]</span> where <span class="math inline">\(a\)</span> is some fixed number between 0 and 1 and <span class="math inline">\(c\)</span> is a constant to be determined. What value of <span class="math inline">\(c\)</span> makes <span class="math inline">\(p_Y\)</span> a mass function? (The answer is a function of <span class="math inline">\(a\)</span>.)</p>
-</section>
-<section id="section-16" class="level7">
-<p class="heading"></p>
-<p><strong>OQ2</strong> Let <span class="math inline">\(X\sim\mbox{\textup{Bern}}(p)\)</span>. Let <span class="math inline">\(Y=1-X\)</span> and <span class="math inline">\(V=X^2\)</span>. Show that</p>
-<ol type="a">
-<li><span class="math inline">\(Y\sim\mbox{\textup{Bern}}(1-p)\)</span>;</li>
-<li><span class="math inline">\(V\sim\mbox{\textup{Bern}}(p)\)</span>.</li>
-</ol>
-</section>
-<section id="section-17" class="level7">
-<p class="heading"></p>
-<p><strong>OQ3.</strong> A fair die is thrown until the sum of the results of the throws exceeds 6. The random variable <span class="math inline">\(X\)</span> is the number of throws needed for this. Let <span class="math inline">\(F_X\)</span> be the distribution function of <span class="math inline">\(X\)</span>. Determine <span class="math inline">\(F_X(1)\)</span>, <span class="math inline">\(F_X(2)\)</span> and <span class="math inline">\(F_X(7)\)</span>.</p>
-</section>
-<section id="section-18" class="level7">
-<p class="heading"></p>
-<p><strong>OQ4.</strong> Consider a roulette wheel, with numbers 00, 0, 1, 2, 3, …, 36 (38 numbers in total). A ball is thrown onto the wheel as it is spinning, and comes to rest by one of the numbers. You always bet that the ball will stop on one of the numbers 1, 2, …, 12. Let <span class="math inline">\(N\)</span> be the random variable giving the number of bets that you lose <em>before</em> your first win. Calculate <span class="math inline">\(p_N(0)\)</span>, <span class="math inline">\(p_N(5)\)</span> and <span class="math inline">\(F_N(5)\)</span>.</p>
-</section>
-<section id="section-19" class="level7">
-<p class="heading"></p>
-<p><strong>OQ5.</strong> <span class="math inline">\(N\geq 3\)</span> people go for coffee. Each person flips a fair coin: if all but one of the coins shows the same face (Head or Tail), then the odd person out pays for all the drinks; if not then the coins are tossed again until this event occurs. How many times on average must each person toss their coin before somebody is selected in this way?</p>
-</section>
-<section id="section-20" class="level7">
-<p class="heading"></p>
-<p><strong>OQ6.</strong> Prove the memoryless property of the exponential distribution which states that if <span class="math inline">\(X\sim\mbox{\textup{Exp}}(\lambda)\)</span> then for any <span class="math inline">\(t,s\geq 0\)</span>, <span class="math display">\[
-\mathbb{P}\left(X&gt;t+s\,|\,X&gt;s\right)=\mathbb{P}\left(X&gt;t\right).
-\]</span></p>
-<p><strong>OQ7. [Harder]</strong> <span class="math inline">\(N\ge 3\)</span> people go for coffee. Each person flips a coin, of which <span class="math inline">\(N-1\)</span> are fair, and one has probability <span class="math inline">\(q\)</span> of coming up Heads (for some <span class="math inline">\(q\in[0,1]\)</span>): if all but one of the coins shows the same face (Head or Tail), then the odd person out pays for all the drinks; if not then the coins are tossed again until this event occurs. How does the expected number of coin tosses each person makes vary with <span class="math inline">\(q\)</span>?</p>
-</section>
-<section id="section-21" class="level7">
-<p class="heading"></p>
-<p><strong>OQ8. [Harder]</strong> Alice and Bob decide to duel, using just one six-shot revolver, and one bullet, between them. They decide to duel in the following way: with the bullet inserted into the revolver, Alice will spin the cylinder and shoot at Bob (killing him if the gun fires); if Alice misses, Bob will spin the cylinder and shoot at Alice. Assuming there is a <span class="math inline">\(1/6\)</span> probability that the revolver will fire each time (since the revolver has 6 chambers), what is</p>
-<ol type="a">
-<li>the distribution of the number of turns <span class="math inline">\(T\)</span> until the gun fires?</li>
-<li>the probability that Alice wins the duel?</li>
-</ol>
-</section>
-</section>
 <section id="section-22" class="level7">
 <p class="heading"></p>
-<div class="challenge">
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Challenge question
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>At time 0, a bag contains 1 Red and 1 Black ball. Just before each time <span class="math inline">\(n=1,2,3,\dots\)</span>, a ball is chosen at random from the bag and then replaced, <em>along with a new ball of the same colour</em>. For <span class="math inline">\(n=0,1,2,\dots\)</span> and <span class="math inline">\(1\leq r\leq n+1\)</span>, let <span class="math display">\[
-p_{n,r} = \mathbb{P}\left(\text{at time $n$, the bag contains exactly $r$ Red balls}\right) \,.
-\]</span></p>
-<ol type="a">
-<li>Write down the values of <span class="math inline">\(p_{0,1}\)</span>, <span class="math inline">\(p_{1,1}\)</span> and <span class="math inline">\(p_{1,2}\)</span>;</li>
-<li>By conditioning on the possible numbers of red balls at time 1, calculate <span class="math inline">\(p_{2,r}\)</span> for <span class="math inline">\(r=1,2,3\)</span>;</li>
-<li>Can you find (and prove!) a general formula for <span class="math inline">\(p_{n,r}\)</span>? [HINT: guess at the right answer using your findings from parts (a) and (b). (Calculate <span class="math inline">\(p_{3,r}\)</span> explicitly if you can’t see a pattern.) Then use induction.]</li>
-</ol>
-</div>
-</div>
-</div>
 </section>
 
 </main>
