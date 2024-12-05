@@ -161,12 +161,12 @@ Answer
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(M\)</span> is an unbiased estimator for <span class="math inline">\(\mu\)</span> if <span class="math inline">\(\mathbb{E}\left[M\right]=\mu\)</span> for any value of <span class="math inline">\(\mu\)</span>. <strong>[1]</strong> We find <span class="math display">\[
 \begin{split}
-\mathbb{E}\left[M\right]&amp;=\mathbb{E}\left[-4(X_1-2)+9X_2 + a (X_3-1)+b\right]\\
-&amp;=-4(\mathbb{E}\left[X_1\right]-2)+9\mathbb{E}\left[X_2\right] + a (\mathbb{E}\left[X_3\right]-1)+b\\
-&amp;=-4(\mu-2)+9\mu + a (\mu-1)+b\\ &amp;=(-4+9+a)\mu+(8-a+b).
+\mathbb{E}\left[M\right]&amp;=\mathbb{E}\left[-4(X_1-2)+9(X_2-1) + aX_3+b\right]\\
+&amp;=-4(\mathbb{E}\left[X_1\right]-2)+9(\mathbb{E}\left[X_2\right]-1) + a\mathbb{E}\left[X_3\right]+b\\
+&amp;=-4(\mu-2)+9(\mu-1) + a \mu+b\\ &amp;=(5+a)\mu+(b-1).
 \end{split}
 \]</span> <strong>[2]</strong><br>
-Thus <span class="math inline">\(\mathbb{E}\left[\mu\right]=\mu\)</span> if and only if <span class="math inline">\(a=-4\)</span> and <span class="math inline">\(b=-12\)</span>. <strong>[2]</strong></p>
+Thus <span class="math inline">\(\mathbb{E}\left[\mu\right]=\mu\)</span> if and only if <span class="math inline">\(a=-4\)</span> and <span class="math inline">\(b=1\)</span>. <strong>[2]</strong></p>
 </div>
 </div>
 </div>
@@ -192,19 +192,19 @@ Answer
 <div class="callout-body-container callout-body">
 <ol type="a">
 <li><p>Since the variance is unknown, we use the interval <span class="math display">\[
-\left[\bar{x}_n - t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}},  \bar{x}_n + t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}}\right]
+\left(\bar{x}_n - t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}},  \bar{x}_n + t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}}\right)
 \]</span> We first calculate <span class="math inline">\(\bar{x}_n = 491/10 = 49.1\)</span> and <span class="math display">\[
 s_n^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \bar{x}_n)^2 = \frac{1}{10-1}41 = \frac{41}{9}.
 \]</span> We’re told that <span class="math inline">\(t_{n-1, \alpha/2} = t_{9, 0.025} = 2.26\)</span> and <span class="math display">\[
 \begin{split}
-\left[\bar{x}_n - t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}},  \bar{x}_n + t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}}\right] &amp;\approx \left[49.1- 2.26\frac{\sqrt{41}}{3\sqrt{10}},  49.1 + 2.26\frac{\sqrt{41}}{3\sqrt{10}}\right]\\
-                 &amp; \approx [47.57, 50.63].
+\left(\bar{x}_n - t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}},  \bar{x}_n + t_{n-1, \alpha/2}\frac{s_n}{\sqrt{n}}\right) &amp;\approx \left(49.1- 2.26\frac{\sqrt{41}}{3\sqrt{10}},  49.1 + 2.26\frac{\sqrt{41}}{3\sqrt{10}}\right)\\
+                 &amp; \approx (47.57, 50.63).
 \end{split}
 \]</span> <strong>[3]</strong></p></li>
 <li><p>When <span class="math inline">\(\sigma^2\)</span> is known, we use the confidence interval <span class="math display">\[
 \begin{split}
-\left[\bar{x}_n - z_{\alpha/2}\frac{\sigma}{\sqrt{n}},  \bar{x}_n + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right]  &amp;\approx \left[49.1- 1.96\frac{\sqrt{5}}{\sqrt{10}},  49.1 + 1.96\frac{\sqrt{5}}{\sqrt{10}}\right]\\
-&amp; \approx [47.71, 50.49].
+\left(\bar{x}_n - z_{\alpha/2}\frac{\sigma}{\sqrt{n}},  \bar{x}_n + z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right)  &amp;\approx \left(49.1- 1.96\frac{\sqrt{5}}{\sqrt{10}},  49.1 + 1.96\frac{\sqrt{5}}{\sqrt{10}}\right)\\
+&amp; \approx (47.71, 50.49).
 \end{split}
 \]</span> <strong>[2]</strong></p></li>
 </ol>
